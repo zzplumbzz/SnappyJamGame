@@ -24,7 +24,7 @@ public class PlayerScript : MonoBehaviour
     Vector3 shrink = new Vector3(0.3f, 0.3f, 0.3f);
 
     public bool UVisionOn;
-    public GameObject[] UVisionOBJ = new GameObject[20];
+    public GameObject[] UVisionOBJ = new GameObject[16];
 
     public Animator animator;
 
@@ -49,8 +49,8 @@ public class PlayerScript : MonoBehaviour
         UVisionOBJ[1] = GameObject.Find("Switch2");
         UVisionOBJ[2] = GameObject.Find("Switch3");
         UVisionOBJ[3] = GameObject.Find("Switch4");
-        UVisionOBJ[17] = GameObject.Find("Switch5");
-        UVisionOBJ[18] = GameObject.Find("Switch6");
+        UVisionOBJ[14] = GameObject.Find("Switch5");
+        UVisionOBJ[15] = GameObject.Find("Switch6");
 
         UVisionOBJ[4] = GameObject.Find("UVisionWall");
         UVisionOBJ[5] = GameObject.Find("UVisionWall2");
@@ -64,7 +64,7 @@ public class PlayerScript : MonoBehaviour
         // UVisionOBJ[13] = GameObject.Find("UVisionWall10");
         // UVisionOBJ[14] = GameObject.Find("UVisionWall11");
         // UVisionOBJ[15] = GameObject.Find("UVisionWall12");
-        UVisionOBJ[16] = GameObject.Find("UVisionWall13");
+        UVisionOBJ[13] = GameObject.Find("UVisionWall13");
        // UVisionOBJ[11] = GameObject.Find("UVisionWall8");
         
         //UVisionOBJ.GetComponent<SpriteRenderer>().enabled = false;
@@ -239,9 +239,9 @@ public class PlayerScript : MonoBehaviour
         // UVisionOBJ[13].GetComponent<SpriteRenderer>().enabled = visionOn;
         // UVisionOBJ[14].GetComponent<SpriteRenderer>().enabled = visionOn;
         // UVisionOBJ[15].GetComponent<SpriteRenderer>().enabled = visionOn;
-        UVisionOBJ[16].GetComponent<SpriteRenderer>().enabled = visionOn;
-        UVisionOBJ[17].GetComponent<SpriteRenderer>().enabled = visionOn;
-        UVisionOBJ[18].GetComponent<SpriteRenderer>().enabled = visionOn;
+        UVisionOBJ[13].GetComponent<SpriteRenderer>().enabled = visionOn;
+        UVisionOBJ[14].GetComponent<SpriteRenderer>().enabled = visionOn;
+        UVisionOBJ[15].GetComponent<SpriteRenderer>().enabled = visionOn;
        // UVisionOBJ[5].GetComponent<SpriteRenderer>().enabled = visionOn;
     }
 
